@@ -1,8 +1,8 @@
 nav {
   background-color: #F4320B;
-  text-align: right;
-  padding: 10px;
-  height: 50px;
+  text-align: center;
+  padding: 15px 10px;
+  height: auto;
   width: auto;
   position: sticky;
 }
@@ -11,9 +11,94 @@ nav {
 	display: grid;
 }
 
+nav h1 {
+	color: white;
+	text-shadow: 1px 1px black;
+	margin: 0 0 10px 0;
+	font-size: 28px;
+}
+
+nav h2 {
+	margin: 0;
+	padding: 0;
+}
+
 nav a {
 	color: white;
 	text-decoration: none;
 	text-shadow: 1px 1px black;
-	font-weight:;
+	font: weight 12px;
+	margin: 0 15px;
+}
+
+.logoBanner {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 30px auto;
+	background-color: white;
+}
+
+.logoImage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	z-index: 1;
+}
+
+.logoText {
+	position: absolute;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	z-index: 2;
+	font-size: 36px;
+}
+
+.missionStatement {
+	background-color: #fff3cd;
+	border: 2px solid #F4320B;
+	padding: 30px;
+	margin: 0 auto 30px;
+	text-align: center;
+	max-width: 900px;
+}
+
+.welcome {
+	background-color: #f8f9fa;
+	border: 2px solid #ddd;
+	padding: 30px;
+	margin: 0 auto 30px;
+	max-width: 900px;
+}
+
+.quickLinks {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	margin: 0 auto 30px;
+	max-width: 900px;
+	padding: 0 20px;
+}
+
+.linkCard {
+	background-color: #fff;
+	border: 2px solid #F4320B;
+	padding: 25px;
+	text-align: center;
+}
+
+.cta {
+	background-color: #F4320B;
+	color: white;
+	border: 2px solid #d92904;
+	padding: 30px;
+	margin: 0 auto;
+	max-width: 900px;
+	text-align: center;
 }
