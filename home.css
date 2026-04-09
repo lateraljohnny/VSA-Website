@@ -1,19 +1,22 @@
 nav {
-  background-color: #F4320B;
+  background-color: #ff845e;
   text-align: center;
+  border: 2px solid #d92904;
   padding: 15px 10px;
   height: auto;
   width: auto;
   position: sticky;
 }
-
+nav h1 {
+	text-shadow: 0.5px 0.5px black;
+}
+	
 .content {
 	display: grid;
 }
 
 nav h1 {
 	color: white;
-	text-shadow: 1px 1px black;
 	margin: 0 0 10px 0;
 	font-size: 28px;
 }
@@ -26,12 +29,15 @@ nav h2 {
 nav a {
 	color: white;
 	text-decoration: none;
-	text-shadow: 1px 1px black;
 	font: weight 12px;
 	margin: 0 15px;
 }
+nav a:hover {
+	text-decoration: none;
+	text-shadow: 1px 1px black;
+}
 
-.logoBanner {
+/*.logoBanner {
 	position: relative;
 	width: 300px;
 	height: 300px;
@@ -58,11 +64,11 @@ nav a {
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 	z-index: 2;
 	font-size: 36px;
-}
+}*/
 
 .missionStatement {
-	background-color: #fff3cd;
-	border: 2px solid #F4320B;
+	background-color: #f8f9fa;
+	border: 2px solid #ddd;
 	padding: 30px;
 	margin: 0 auto 30px;
 	text-align: center;
@@ -94,7 +100,7 @@ nav a {
 }
 
 .cta {
-	background-color: #F4320B;
+	background-color: #ff845e;
 	color: white;
 	border: 2px solid #d92904;
 	padding: 30px;
