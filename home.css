@@ -1,112 +1,184 @@
-nav {
-  background-color: #ff845e;
-  text-align: center;
-  border: 2px solid #ff6c44;
-  padding: 15px 10px;
-  height: auto;
-  width: auto;
-  position: sticky;
-}
-nav h1 {
-	text-shadow: 0.5px 0.5px black;
-	color: white;
-	margin: 0 0 10px 0;
-	font-size: 28px;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-/*nav h2 {
-	margin: 0;
-	padding: 0;
-}*/
+nav {
+  background-color: #cc0000;
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 3px solid #000000;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navBrand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.navLogo {
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}
+
+.navTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+nav a, .linkCard a, .cta a {
+  text-decoration: none;
+  font-weight: 700;
+}
 
 nav a {
-	color: white;
-	text-decoration: none;
-	font: weight 12px;
-	margin: 0 15px;
-}
-nav a:hover {
-	text-decoration: none;
-	text-shadow: 1px 1px black;
+  color: #ffffff;
+  font-size: 16px;
 }
 
-/*.logoBanner {
-	position: relative;
-	width: 300px;
-	height: 300px;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 30px auto;
-	background-color: white;
+nav a:hover, .linkCard a:hover {
+  text-decoration: underline;
 }
-
-.logoImage {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-	z-index: 1;
-}
-
-.logoText {
-	position: absolute;
-	color: white;
-	text-align: center;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-	z-index: 2;
-	font-size: 36px;
-}*/
 
 .content {
-	background-color: #f8f9fa;
-	border: 2px solid #ddd;
-	padding: 30px;
-	margin: 0 auto 30px;
-	text-align: center;
-	max-width: 900px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 30px;
+  margin: 0 auto 30px;
+  text-align: center;
+  max-width: 900px;
+  color: #000000;
+}
+
+.content h2, .cta h2, .event h2 {
+  margin-top: 0;
 }
 
 .quickLinks {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 20px;
-	margin: 0 auto 30px;
-	max-width: 900px;
-	padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 0 auto 30px;
+  max-width: 900px;
+  padding: 0 20px;
 }
 
 .linkCard {
-	background-color: #fff;
-	border: 2px solid #ff845e;
-	padding: 25px;
-	text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 25px;
+  text-align: center;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.linkCard h3, .linkCard p {
+  margin: 0 0 15px;
+}
+
+.linkCard a {
+  color: #000000;
+}
+
+.linkCard.red {
+  background-color: #cc0000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.linkCard.red h3, .linkCard.red p {
+  color: #ffffff;
+}
+
+.linkCard.red a {
+  color: #ffffff;
 }
 
 .cta {
-	background-color: #ff845e;
-	color: white;
-	border: 2px solid #ff6c44;
-	padding: 30px;
-	margin: 0 auto;
-	max-width: 900px;
-	text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 30px;
+  margin: 0 auto 30px;
+  max-width: 900px;
+  text-align: center;
 }
 
-.social_media {
-	list-style: none; 
-	margin-left: -40px;
+.cta h2 {
+  margin-top: 0;
 }
 
-.social_media li {
-	display: inline-block;
+.cta p {
+  margin: 0;
 }
 
-.faculty{
-	margin-bottom: 5px;
+.cta a {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 24px;
+  background-color: #cc0000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  border: 2px solid #000000;
 }
 
-.socials {
-	margin-bottom: 0px;
+.cta a:hover {
+  background-color: #b30000;
+}
+
+.events {
+  display: grid;
+  gap: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.event {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 25px;
+}
+
+footer {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.socialMedia {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.socialMedia li {
+  display: inline-block;
 }
