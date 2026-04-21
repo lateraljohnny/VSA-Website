@@ -23,81 +23,92 @@
 
     <main>
 
-        <!-- Calendar Section (Moved Up) -->
-        <div style="max-width:900px;margin:20px auto;padding:0 20px;">
-            <div style="background-color:#C8102E;color:#ffffff;border:2px solid #000000;padding:18px;text-align:center;">
-                <h3 style="margin:0 0 10px 0;">Events Google Calendar</h3>
-                <p style="margin:0 0 8px 0;">
+        <div class="calendar">
+            <div class="calendarSection">
+                <h3>Events Google Calendar</h3>
+                <p>
                     If you would like to see past or future events and meetings, view our calendar.
                 </p>
                 <a href="https://calendar.google.com/calendar/embed?src=fbe73925342f1a7f4fad41845ae51c4c52d3464c0493415c6734c1e031b3d1da%40group.calendar.google.com&ctz=America%2FNew_York"
-                   style="color:#ffffff; text-decoration:none; font-weight:700;"
-                   onmouseover="this.style.textDecoration='underline'"
-                   onmouseout="this.style.textDecoration='none'"
+                   class="calendarLink"
                    target="_blank">
                    Open Calendar →
                 </a>
             </div>
         </div>
 
-        <!-- Events Section -->
-        <section class="events">
-
-            <div class="event">
-                <h2>1. Camp For a Cause</h2>
-                <p><strong>Date:</strong> April 13-17</p>
-                <p><strong>Time:</strong> All Day</p>
-                <p><strong>Location:</strong> Cruz Plaza</p>
-                <p>
-                    Watch the student organizations, sororities, and fraternities compete in fun games
-                    against each other in different level brackets for a whole week of fun activities on cruz plaza!
-                </p>
+        <!-- Events Section with Side Images -->
+        <div class="events-container">
+            <div class="events-side">
+                <img src="VSA Images/cfacVSA.jpg" alt="Camp For a Cause" class="events-side-image">
+                <p class="events-side-caption">VSA at Camp for a Cause</p>
             </div>
 
-            <div class="event">
-                <h2>2. VSA April GBM</h2>
-                <p><strong>Date:</strong> April 22, 2026</p>
-                <p><strong>Time:</strong> 7:30 PM - 8:30 PM</p>
-                <p><strong>Location:</strong> Mercer University</p>
-                <p>Meet with the members of the club to discuss benefits of the club</p>
-            </div>
+            <section class="events-center">
 
-            <div class="event">
-                <h2>3. 2026-2027 VSA Exec Applications</h2>
-                <p><strong>Date:</strong> April 6 – 12, 2026</p>
-                <p><strong>Time:</strong> All Day</p>
-                <p><strong>Location:</strong> Online Application Form</p>
-                <p>Apply to become a part of our exec team for next year!</p>
-            </div>
+                <div class="event">
+                    <h2>1. Camp For a Cause</h2>
+                    <p><strong>Date:</strong> April 13-17</p>
+                    <p><strong>Time:</strong> All Day</p>
+                    <p><strong>Location:</strong> Cruz Plaza</p>
+                    <p>
+                        Watch the student organizations, sororities, and fraternities compete in fun games
+                        against each other in different level brackets for a whole week of fun activities on cruz plaza!
+                    </p>
+                </div>
 
-            <div class="event">
-                <h2>4. Sequoia Smiles Pay-It-Forward</h2>
-                <p><strong>Date:</strong> May 9, 2026</p>
-                <p><strong>Time:</strong> 6:00 AM - 6:00 PM</p>
-                <p><strong>Location:</strong> Sequoia Smiles</p>
-                <p>
-                    With a minimum $50 donation, you can receive one of four dental services provided by the dentists there.
-                    All proceeds earned will go toward supporting Mercer on Mission Vietnam.
-                </p>
-            </div>
+                <div class="event">
+                    <h2>2. VSA April GBM</h2>
+                    <p><strong>Date:</strong> April 22, 2026</p>
+                    <p><strong>Time:</strong> 7:30 PM - 8:30 PM</p>
+                    <p><strong>Location:</strong> Mercer University</p>
+                    <p>Meet with the members of the club to discuss benefits of the club</p>
+                </div>
 
-            <div class="event">
-                <h2>5. Pad Thai Food Stand</h2>
-                <p><strong>Date:</strong> Thursday, April 9</p>
-                <p><strong>Time:</strong> 11:30am – 2:30pm</p>
-                <p><strong>Location:</strong> SEB Breezeway</p>
-                <p>Come visit a traditional Thai food stand and enjoy the food</p>
-            </div>
+                <div class="event">
+                    <h2>3. 2026-2027 VSA Exec Applications</h2>
+                    <p><strong>Date:</strong> April 6 - 12, 2026</p>
+                    <p><strong>Time:</strong> All Day</p>
+                    <p><strong>Location:</strong> Online Application Form</p>
+                    <p>Apply to become a part of our exec team for next year!</p>
+                </div>
 
-            <div class="event">
-                <h2>6. VSA Exec Meeting</h2>
-                <p><strong>Date:</strong> April 5, 2026</p>
-                <p><strong>Time:</strong> 10:00 PM - 11:00 PM</p>
-                <p><strong>Location:</strong> VSA Meeting Room</p>
-                <p>Meeting between executives in the club to go over the year</p>
-            </div>
+                <div class="event">
+                    <h2>4. VSA Olympics (UVSASE)</h2>
+                    <p><strong>Date:</strong> April 4th, 2026</p>
+                    <p><strong>Time:</strong> All Day</p>
+                    <p><strong>Location:</strong> Lawrenceville, Georgia</p>
+                    <p>
+                        VSA competes at the Undergraduate Vietnamese Student Association Southeast (UVSASE) Olympics against VSA clubs from different universities in the Southeast region.
+                    </p>
+                </div>
 
-        </section>
+                <div class="event">
+                    <h2>5. Pad Thai Food Stand</h2>
+                    <p><strong>Date:</strong> Thursday, April 9</p>
+                    <p><strong>Time:</strong> 11:30am - 2:30pm</p>
+                    <p><strong>Location:</strong> SEB Breezeway</p>
+                    <p>Come visit a traditional Thai food stand and enjoy the food</p>
+                </div>
+
+                <div class="event">
+                    <h2>6. VSA Exec Meeting</h2>
+                    <p><strong>Date:</strong> April 5, 2026</p>
+                    <p><strong>Time:</strong> 10:00 PM - 11:00 PM</p>
+                    <p><strong>Location:</strong> VSA Meeting Room</p>
+                    <p>Meeting between executives in the club to go over the year</p>
+                </div>
+
+            </section>
+
+            <div class="events-side">
+                <img src="VSA Images/vsaCharityDinnerMonk.JPG" alt="VSA members with monks" class="events-side-image">
+                <p class="events-side-caption">VSA members with monks during Walk for Peace</p>
+                
+                <img src="VSA Images/vsaOlympics.jpg" alt="VSA Olympics - Flag Football" class="events-side-image events-side-image-second">
+                <p class="events-side-caption">VSA team at UVSASE Olympics flag football</p>
+            </div>
+        </div>
 
     </main>
 
